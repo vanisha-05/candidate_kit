@@ -43,3 +43,5 @@ when Docker is available. Each test gets an isolated database that is dropped af
 
 A public Git repository with `app/main.py`, `requirements.txt`, `REVIEW.md`, `DECISIONS.md` and a short `README.md`.
 No `.env`, no secrets, no Dockerfile.
+"Trigger CI run for Codecov" 
+"Trigger Codecov upload" 
