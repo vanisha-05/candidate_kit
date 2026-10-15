@@ -19,6 +19,7 @@ jobs:
           --health-retries=5
     env:
       TEST_MONGO_URI: mongodb://localhost:27017/testdb
+      PYTHONPATH: .
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -36,7 +37,8 @@ jobs:
           pip install -r requirements.txt
           pip install -r requirements-test.txt
       - name: Run tests with coverage
-        run: pytest --cov=app --cov-report=xml
+        run: python -m pytest --cov=app --cov-report=xml
+        working-directory: .
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v4
         with:

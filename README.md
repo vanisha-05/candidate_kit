@@ -1,6 +1,6 @@
 # Candidate kit
 
-![Coverage](https://codecov.io/gh/<your-username>/<your-repo>/branch/main/graph/badge.svg)
+![Coverage](https://codecov.io/gh/vanisha-05/candidate_kit/branch/main/graph/badge.svg)
 
 ## Project Status
 
